@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "solc": "0.8.14-fixed",
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
