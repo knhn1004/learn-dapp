@@ -1,5 +1,3 @@
-const _deploy_contracts = require('../migrations/2_deploy_contracts');
-
 const RWD = artifacts.require('RWD');
 const Tether = artifacts.require('Tether');
 const DecentralBank = artifacts.require('DecentralBank');
@@ -12,6 +10,14 @@ contract('decentralBank', accounts => {
       const tether = await Tether.new();
       const name = await tether.name();
       assert.equal(name, 'Mock Tether Token');
+    });
+  });
+
+  describe('Reward Token', async () => {
+    it('matches name successfully', async () => {
+      const reward = await RWD.new();
+      const name = await reward.name();
+      assert.equal(name, 'Reward Token');
     });
   });
 });
