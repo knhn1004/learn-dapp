@@ -5,7 +5,7 @@ import './Tether.sol';
 import './RWD.sol';
 
 contract DecentralBank {
-	string public name = 'Decental Bank';
+	string public name = 'Decentral Bank';
 	address public owner;
 	Tether public tether;
 	RWD public rwd;
