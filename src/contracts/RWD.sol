@@ -49,7 +49,7 @@ contract RWD {
         balanceOf[_to] += _value;
         // subtract the balance for transferFrom
         balanceOf[_from] -= _value;
-        allowance[msg.sender][_from] -= _value;
+        allowance[_from][msg.sender] -= _value;
         emit Transfer(_from, _to, _value);
         return true;
     }
